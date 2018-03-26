@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>Загрузка файлов на сервер</title>
+		<style>
+			#wrap{
+				width:400px;
+				height:100%;
+				display:block;
+				margin:0 auto;
+			}
+			h2{
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<h2>Демо: Загрузка файлов на сервер</h2>
+			<form enctype="multipart/form-data" method="post" action="uploads.php">
+				<p>Загрузите ваши фотографии на сервер</p>
+				<p><input type="file" name="files"/>
+				<p>Код: <input type="text" name="code"/></p>
+				<input type="hidden" name="showdatalink" value="1"/>
+				<input type="submit" value="Отправить" name="upload"/></p>
+			</form>
+		</div>
+	</body>
+</html>
